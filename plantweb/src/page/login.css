@@ -1,0 +1,22 @@
+#login_div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#id_label, #pw_label{
+    font-size: 30pt;
+}
+
+#id, #pw{
+    width: 300px;
+    height: 45px;
+}
+
+#login_btn{
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    font-size: 25pt;
+}
