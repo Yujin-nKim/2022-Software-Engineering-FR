@@ -1,15 +1,17 @@
 import "./searchResult.css"
 
 
-export const SearchResult = () => {
+export const SearchResult = (props) => {
     return (
-        <div id ="searchResult_div">
-            <table id="result_table">
-                <tr>
-                    <th>--- plantImgUrl ---</th>
-                    <td>--- plantNameKR / plantNameEN ---</td>
-                </tr>
-            </table>
+        <div>
+            <li>
+                <table id="result_table">
+                    <tr>
+                        <th><img src={props.plantImgUrl}></img></th>
+                        <td>{props.plantNameKR} / {props.plantNameEN}</td>
+                    </tr>
+                </table>
+            </li>
         </div>
     );
 }

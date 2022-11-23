@@ -15,12 +15,6 @@ td{
     width: 650px;
 }
 
-#searchResult_div, #result_div{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 p{
     font-size:x-large;
     margin-bottom: 10px;
