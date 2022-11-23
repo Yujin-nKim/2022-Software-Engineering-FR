@@ -7,6 +7,9 @@
 
 #id_label, #pw_label{
     font-size: 30pt;
+    width: 70px;
+    display: inline-block;
+    text-align: center;
 }
 
 #id, #pw{
@@ -19,4 +22,8 @@
     height: 50px;
     margin: 20px;
     font-size: 25pt;
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    transform: translate(-50%, -50%);
 }

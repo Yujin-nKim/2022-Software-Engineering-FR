@@ -8,7 +8,7 @@ table, td, th{
 #search_div{
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 25%;
     transform: translate(-50%, -50%);
 }
 
