@@ -4,6 +4,7 @@ import './App.css';
 import {Header} from "./component/header";
 import {Login} from "./page/login";
 import {Main} from "./page/main";
+import {ShowSearchList} from "./page/showSearchList"
 
 
 import React from "react";
@@ -15,6 +16,8 @@ const Router = () => {
         <Routes>
            <Route exact path="/main" element ={<Main/>} />
            <Route exact path="/login" element ={<Login/>} />
+           <Route exact path="/main/searchList" element ={<ShowSearchList/>} />
+
         </Routes>
      </BrowserRouter>
   );
