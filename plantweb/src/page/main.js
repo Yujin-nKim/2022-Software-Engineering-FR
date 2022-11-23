@@ -1,4 +1,5 @@
 import Header from "../component/header";
+import SearchResult from "../component/searchResult";
 import "./main.css"
 
 export const Main=()=>{
@@ -10,7 +11,7 @@ export const Main=()=>{
                 <p>검색</p>
                 <hr></hr>
                 <br></br>
-                <table>
+                <table id="search_table">
                     <tr>
                         <th>
                             <select name="searchType">
@@ -72,6 +73,11 @@ export const Main=()=>{
                 </table>
             </div>
 
+            <div id="result_div">
+                <p>결과</p>
+                <hr></hr>
+                <SearchResult></SearchResult>
+            </div>
         </div>
     );
     
