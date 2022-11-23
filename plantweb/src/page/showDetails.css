@@ -1,0 +1,21 @@
+table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#details_table{
+    width: 900px;
+}
+
+th{
+    width: 250px;
+}
+
+td{
+    width: 650px;
+}
+
+p{
+    font-size:x-large;
+    margin-bottom: 10px;
+}
