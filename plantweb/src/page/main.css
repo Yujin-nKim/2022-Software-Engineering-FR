@@ -3,6 +3,8 @@ table, td, th{
     border-collapse: collapse;
 }
 
+
+
 #search_div{
     position: absolute;
     left: 50%;
@@ -17,7 +19,7 @@ hr{
     background: black;
 }
 
-table{
+#search_table{
     width: 1200px;
 }
 
