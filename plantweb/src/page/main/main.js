@@ -49,7 +49,7 @@ export const Main=()=>{
                 "plantImgUrl": "http://www.nongsaro.go.kr/cms_contents/1122/204858_MF_BIMG_01.jpg"
             }
         ]);
-}
+    }
 
     return (
         <div>

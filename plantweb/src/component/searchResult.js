@@ -9,7 +9,7 @@ export const SearchResult = (props) => {
                     <tbody>
                         <tr>
                             <td><img src={props.plantImgUrl}></img></td>
-                        <td>{props.plantNameKR} / <i>{props.plantNameEN}</i></td>
+                            <td>{props.plantNameKR} / <i>{props.plantNameEN}</i></td>
                     
                         </tr>
                     </tbody>

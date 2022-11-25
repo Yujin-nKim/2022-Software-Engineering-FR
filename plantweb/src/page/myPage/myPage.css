@@ -1,0 +1,25 @@
+table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+
+#interestList_div{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+hr{
+    width: 1200px;
+    border: 0;
+    height: 2px;
+    background: black;
+}
+
+p{
+    font-size:x-large;
+    margin-bottom: 10px;
+}
