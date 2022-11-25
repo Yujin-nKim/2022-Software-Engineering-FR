@@ -27,6 +27,7 @@ export const Main=()=>{
     //         alert("서버 장애");
     //     })
     // }
+
     const handleSearchBtn =()=>{
         setSearchResult([
             {
@@ -34,11 +35,22 @@ export const Main=()=>{
                 "plantNameKR": "페페로미아 그라베올렌스",
                 "plantNameEN": "<i>Peperomia graveolens</i>",
                 "plantImgUrl": "http://www.nongsaro.go.kr/cms_contents/1122/204870_MF_BIMG_01.jpg"
+            },
+            {
+                "plantID": "204865",
+                "plantNameKR": "사마로",
+                "plantNameEN": "<i>Sinocrassula yunnanensis</i>",
+                "plantImgUrl": "http://www.nongsaro.go.kr/cms_contents/1122/204865_MF_BIMG_01.jpg"
+            },
+            {
+                "plantID": "204858",
+                "plantNameKR": "자보",
+                "plantNameEN": "<i>Gasteria gracilis</i> var. <i>minima</i>",
+                "plantImgUrl": "http://www.nongsaro.go.kr/cms_contents/1122/204858_MF_BIMG_01.jpg"
             }
         ]);
-        }
+}
 
-    
     return (
         <div>
             <div id="header_div">
