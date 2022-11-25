@@ -14,6 +14,7 @@ const Router = () => {
   return (
      <BrowserRouter>
         <Routes>
+            <Route exact path="/header" element ={<Header/>} />
            <Route exact path="/" element ={<Main/>} />
            <Route exact path="/login" element ={<Login/>} />
            <Route exact path="/searchList" element ={<ShowSearchList/>} />

@@ -41,7 +41,7 @@ export const Main=()=>{
     
     return (
         <div>
-            <div>
+            <div id="header_div">
                 <Header></Header>
             </div>
 
@@ -115,7 +115,7 @@ export const Main=()=>{
                     </tr>
                 </table>
             </div>
-            <div>
+            <div id="searchList_div">
                 <ShowSearchList data ={searchResult} ></ShowSearchList>
             </div>
 

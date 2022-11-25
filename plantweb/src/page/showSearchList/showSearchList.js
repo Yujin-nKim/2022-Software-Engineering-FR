@@ -3,9 +3,8 @@ import { useState } from "react";
 import "./showSearchList.css"
 
 export const ShowSearchList=(prop)=>{
-    const [resultData,setResultData]=useState([]);
     console.log(prop);
-    const resultList = prop.data.map(result => (<SearchResult plantNameKR={result.plantNameKR} plantNameEN={result.plantNameEN} plantImgUrl={result.plantImgUrl}/>));
+    // const resultList = prop.data.map(result => );
     return (
         <div>
 
@@ -14,7 +13,12 @@ export const ShowSearchList=(prop)=>{
                 <hr></hr>
                 
                 <ul>
-                    {resultList}
+                    {prop.data.map(result => {
+                        <li>
+                            <SearchResult plantNameKR={result.plantNameKR} plantNameEN={result.plantNameEN} plantImgUrl={result.plantImgUrl}/>
+
+                        </li>
+                    })}
                 </ul>
             </div>
         </div>

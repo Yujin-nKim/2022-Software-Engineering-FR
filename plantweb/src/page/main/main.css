@@ -8,7 +8,7 @@ table, td, th{
 #search_div{
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 35%;
     transform: translate(-50%, -50%);
 }
 
@@ -26,4 +26,11 @@ hr{
 p{
     font-size:x-large;
     margin-bottom: 10px;
+}
+
+#searchList_div{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
 }

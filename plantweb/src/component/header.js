@@ -30,9 +30,9 @@ export const Header = () => {
     return (
         <div id ="header_div">
             <div id="logo_div">
-            <img id="logoImg" alt="logo" src={Logo} />
+                <img className="logoImg" alt="logo" src={Logo} />
             </div>
-            <div id="space_div"></div>
+            <div id="space_div"><span></span></div>
             <div id="btn_div"><button id="btn_moveToLogin" onClick ={LoginOrOut}>{buttonText}</button></div>
             <div id="myPage_div" onClick={movemyPage}>UserImg</div>
         </div>
