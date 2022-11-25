@@ -1,6 +1,6 @@
 import { useNavigate,useLocation } from 'react-router-dom';
 import { useState } from "react";
-import axios from 'axios';
+// import axios from 'axios';
 import Logo from "../../images/Logo.png";
 import "./login.css"
 
@@ -39,7 +39,7 @@ export const Login=()=>{
     
     return (
         <div id="para">
-            <div id="logo_div">
+            <div className="logo_div">
             <img className="logoImg" alt="logo" src={Logo} />
             </div>
             <div id="login_div">

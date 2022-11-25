@@ -6,10 +6,13 @@ export const SearchResult = (props) => {
         <div>
             <li>
                 <table id="result_table">
-                    <tr>
-                        <th><img src={props.plantImgUrl}></img></th>
-                        <td>{props.plantNameKR} / <i>{props.plantNameEN}</i></td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td><img src={props.plantImgUrl}></img></td>
+                            <td>{props.plantNameKR} / <i>{props.plantNameEN}</i></td>
+                    
+                        </tr>
+                    </tbody>
                 </table>
             </li>
         </div>
@@ -17,3 +20,4 @@ export const SearchResult = (props) => {
 }
 
 export default SearchResult;
+
