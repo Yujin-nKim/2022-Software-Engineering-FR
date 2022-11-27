@@ -5,7 +5,7 @@ import axios from "axios";
 import "./main.css"
 
 export const Main=()=>{
-    const [searchType,setSearchType]=useState("");
+    const [searchType,setSearchType]=useState("sCntntsSj");
     const [searchWord,setSearchWord]=useState("");
     const [growRate,setGrowRate]=useState("");
     const [manageLevel,setManageLevel]=useState("");
@@ -29,6 +29,11 @@ export const Main=()=>{
     // }
 
     const handleSearchBtn =()=>{
+        console.log('searchType : ',searchType, 
+                    '\nsearchWord : ' , searchWord,
+                    '\ngrowRate : ', growRate,
+                    '\nmanageLevel : ' , manageLevel ,
+                    '\nmanageDemand : ' , manageDemand)
         setSearchResult([
             {
                 "plantID": "204870",
@@ -58,20 +63,23 @@ export const Main=()=>{
             </div>
 
             <div id="search_div">
-                <p>검색</p>
+                <p>검색 🔍</p>
                 <hr></hr>
                 <br></br>
                 <table id="search_table">
                     <tr>
                         <th>
-                            <select name="searchType" onChange={(e)=>setSearchType(e.target.value)}>
+                            <select name="searchType" onChange={(e)=>setSearchType(e.target.value)} className="serchTypeDropBox">
                                 <option value="sCntntsSj">식물명(한국어)</option>
                                 <option value="sScnm">식물명(영어)</option>
                             </select>
                         </th>
                         <td>
-                            <input type="text" name="searchWord" id="searchWord" onChange={(e)=>setSearchWord(e.target.value)}></input>
-                            <input type="button" name="search_btn" id="search_btn" value="검색" onClick={handleSearchBtn}></input>
+                            <div className="search_div">
+                                <input type="text" name="searchWord" id="searchWordInput" onChange={(e)=>setSearchWord(e.target.value)}></input>
+                                <input type="button" name="search_btn" id="search_btn" value="검색" onClick={handleSearchBtn}></input>
+
+                            </div>
                         </td>
                     </tr>
 
