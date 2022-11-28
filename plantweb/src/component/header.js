@@ -1,6 +1,6 @@
 import { useNavigate} from 'react-router-dom';
 import {useState, useEffect} from "react"
-import Logo from "../images/Logo.png";
+import Logo from "../images/Logo_header.png";
 import UserIcon from"../images/user_icon.png";
 import "./header.css"
 
@@ -24,7 +24,11 @@ export const Header = () => {
         }
     }
     const moveToMyPage =() => {
-        navigate('/myPage');
+        if(sessionStorage.getItem("userID")==null){
+            alert("로그인 후 이용 가능한 기능입니다")
+        }else{
+            navigate('/myPage');
+        }
     }
     const moveToMain =() => {
         navigate('/');
@@ -33,7 +37,7 @@ export const Header = () => {
     return (
         <div id ="header_div">
             <div className="logo_div"  onClick={moveToMain}>
-                <img className="logoImg" alt="logo" src={Logo} />
+                <img className="logoImg_header" alt="logo" src={Logo} />
                 <span className="logoText">PLANTINUS</span>
             </div>
 
