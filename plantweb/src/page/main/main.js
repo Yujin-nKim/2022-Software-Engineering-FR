@@ -14,13 +14,13 @@ export const Main=()=>{
     const [searchResult,setSearchResult]=useState([]);
 
     const handleSearchBtn =()=>{
-        axios.get("http://127.0.0.1:8000/searchResultList",{
-                'searchType':searchType, 
-                'searchWord' : searchWord,
-                'growRate': growRate,
-                'manageLevel' : manageLevel ,
-                'manageDemand': manageDemand
-        }).then(v=>{
+        axios.get("http://127.0.0.1:8000/searchResultList",{params:{
+            'searchType':searchType, 
+            'searchWord' : searchWord,
+            'growRate': growRate,
+            'manageLevel' : manageLevel ,
+            'manageDemand': manageDemand
+    }}).then(v=>{
             setSearchResult(v.data);
         },
         e=>{
