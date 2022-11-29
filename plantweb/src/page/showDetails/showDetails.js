@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 export const ShowDetails=()=>{
 
     const [detailData, setDetailData]=useState([]);
-    const [isLoaded, setIsLoaded]=useState(false);
+    const [checkPlantID, setCheckPlantID]=useState("");
     const [isResgisterd, setIsResgisterd]=useState("");
     const [isResgisterd_icon, setIsResgisterd_icon]=useState("♡");
     
@@ -17,22 +17,21 @@ export const ShowDetails=()=>{
     const location = useLocation();
     
     useEffect(()=>{
+        setCheckPlantID(location.state.plantId);
+        console.log(checkPlantID);
         axios.get("http://127.0.0.1:8000/plantDetails",{
             params:{
-            plantId : location.state.plantId
+            plantId : checkPlantID
             }
         }).then(v=>{
-            console.log(location.state.plantId)
-            // console.log(v.data)
             
             // setDetailData(v.data);
-            // setIsLoaded(true);
         },
         e=>{
             alert("서버 장애");
             console.log(e)
         })
-    },[isLoaded])
+    },[checkPlantID])
 
     // const registerInterests=()=>{
     //     axios.post("localhose:8080",{
