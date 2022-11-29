@@ -4,14 +4,10 @@ import {useNavigate} from 'react-router-dom';
 
 export const SearchResult = (props) => {
     const navigate = useNavigate();
-    console.log(props)
 
     const moveTodetailPage=()=>{
-        navigate("/details",{
-            state: {
-                plantID : props.plantID
-            }
-        });
+        sessionStorage.setItem("plantID",props.plantID)
+        navigate("/details");
     }
 
     return (
