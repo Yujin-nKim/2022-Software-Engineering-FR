@@ -17,8 +17,6 @@ export const ShowDetails=()=>{
     const navigate = useNavigate();
     
     useEffect(()=>{
-        setCheckPlantID(location.state.plantId);
-        console.log(checkPlantID);
         axios.get("http://127.0.0.1:8000/plantDetails",{
             params:{
             plantID : sessionStorage.getItem("plantID")
@@ -30,9 +28,8 @@ export const ShowDetails=()=>{
         },
         e=>{
             alert("서버 장애");
-            console.log(e)
         })
-    },[checkPlantID])
+    },[isLoaded])
 
     
     const registerInterests=()=>{
