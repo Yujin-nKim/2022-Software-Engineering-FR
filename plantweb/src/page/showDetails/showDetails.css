@@ -5,8 +5,28 @@ table, td, th{
 
 #details_table{
     width: 900px;
+    
 }
 
+#plantImg_div{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+#plantingInfo_div{
+    position: absolute;
+    left: 50%;
+    top: 105%;
+    transform: translate(-50%, -50%);
+}
+
+p{
+    font-size:large;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 th{
     width: 250px;
 }
