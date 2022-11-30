@@ -59,15 +59,15 @@ export const ShowDetails=()=>{
             <Header></Header>
 
             <div id="details_div">
-                <div>
-                    <div><span>사진</span></div>
+                <div id="plantImg_div">
+                    <div><p id="img_label">사진</p></div>
                     <div><hr></hr></div>
                     <div>
                         <img src={detailData.plantImgUrl}></img>
                     </div>
                 </div>
 
-                <div>
+                <div id="plantingInfo_div">
                     <div>
                         <p>재배정보</p>
                         <hr></hr>
