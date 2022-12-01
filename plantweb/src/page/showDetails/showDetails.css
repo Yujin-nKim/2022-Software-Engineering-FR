@@ -27,7 +27,7 @@ table, td, th{
 #plantingInfo_div{
     position: absolute;
     left: 50%;
-    top: 103%;
+    top: 104%;
     transform: translate(-50%, -50%);
 }
 

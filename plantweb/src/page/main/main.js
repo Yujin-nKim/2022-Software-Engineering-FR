@@ -43,13 +43,13 @@ export const Main=()=>{
             <Header></Header>
 
             <div id="search_div">
-                <p className="search_text">검색 🪴</p>
+                <p className="title_text">검색 🪴</p>
                 <hr></hr>
                 <br></br>
                 <table id="search_table">
                     <tr>
                         <th>
-                            <select name="searchType" onChange={(e)=>setSearchType(e.target.value)} className="serchTypeDropBox">
+                            <select name="searchType" onChange={(e)=>setSearchType(e.target.value)} className="searchTypeDropBox">
                                 <option value="sCntntsSj">식물명(한국어)</option>
                                 <option value="sScnm">식물명(영어)</option>
                             </select>
@@ -135,7 +135,7 @@ export const Main=()=>{
             <div id="span_div"><span></span></div>
             <div id="searchList_div">
                 
-                    <p>결과 🌱 </p>
+                    <p className="title_text">결과 🌱 </p>
                     <hr></hr>
                 
                 <ShowSearchList data ={searchResult} ></ShowSearchList>
