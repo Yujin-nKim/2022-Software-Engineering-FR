@@ -39,9 +39,7 @@ export const Main=()=>{
 
     return (
         <div>
-            <div id="header_div">
-                <Header></Header>
-            </div>
+            <Header></Header>
 
             <div id="search_div">
                 <p className="search_text">검색 🪴</p>
@@ -134,6 +132,10 @@ export const Main=()=>{
                 </table>
             </div>
             <div id="searchList_div">
+
+                <p>결과 🌱 </p>
+                <hr></hr>
+                
                 <ShowSearchList data ={searchResult} ></ShowSearchList>
             </div>
 
