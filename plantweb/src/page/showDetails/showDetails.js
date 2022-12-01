@@ -154,10 +154,10 @@ export const ShowDetails=()=>{
                         </table>
                     </div>
 
+                    <div className="registerBtn_div">
+                        <button className="registerInterests_btn" onClick={registerInterests}>관심 등록<span className="icon_heart">{isResgisterd_icon}</span></button>
+                    </div>
                 </div>
-            </div>
-            <div className="buttonName">
-                <button className="registerInterests_btn" onClick={registerInterests}>관심 등록<span className="icon_heart">{isResgisterd_icon}</span></button>
             </div>
         </div>
     );
