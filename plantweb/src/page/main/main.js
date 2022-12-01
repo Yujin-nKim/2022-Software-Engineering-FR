@@ -33,6 +33,7 @@ export const Main=()=>{
             alert("서버 장애");
         })
 
+        document.getElementById("searchList_div").style.display = "inline-block";
     }
 
     
@@ -131,10 +132,11 @@ export const Main=()=>{
                     </tr>
                 </table>
             </div>
+            <div id="span_div"><span></span></div>
             <div id="searchList_div">
-
-                <p>결과 🌱 </p>
-                <hr></hr>
+                
+                    <p>결과 🌱 </p>
+                    <hr></hr>
                 
                 <ShowSearchList data ={searchResult} ></ShowSearchList>
             </div>

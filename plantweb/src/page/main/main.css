@@ -12,14 +12,12 @@ table, td, th{
     top: 35%;
     transform: translate(-50%, -50%);
 }
-
-#searchList_div{
+/*
+#span_div{
     position: absolute;
     left: 50%;
-    top: 130%;
-    transform: translate(-50%, -50%);
-}
-
+    top: 150%;
+    transform: translate(-50%, -50%);}*/
 hr{
     width: 1200px;
     border: 0;
@@ -64,8 +62,9 @@ p{
 #searchList_div{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 60%;
     transform: translate(-50%, -50%);
+    display: none;
 }
 [type="radio"] {
     vertical-align: middle;

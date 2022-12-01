@@ -7,7 +7,6 @@ export const ShowSearchList=(prop)=>{
 
     return (
         <div>
-            
             <div className="resultTable_div">
                 <ul className="resultTableUl_div">
                     {resultList}
