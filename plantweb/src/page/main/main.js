@@ -43,7 +43,7 @@ export const Main=()=>{
             <Header></Header>
 
             <div id="search_div">
-                <p className="title_text">검색 🪴</p>
+                <p className="search_text">검색 🪴</p>
                 <hr></hr>
                 <br></br>
                 <table id="search_table">
