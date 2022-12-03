@@ -8,6 +8,10 @@ export const SearchResult = (props) => {
     const moveTodetailPage=()=>{
         sessionStorage.setItem("plantID",props.plantID)
         navigate("/details");
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
     }
 
     return (
@@ -16,7 +20,7 @@ export const SearchResult = (props) => {
                 <table id="result_table">
                     <tr onClick={moveTodetailPage}>
                         <td><img src={props.plantImgUrl}></img></td>
-                        <td>{props.plantNameKR} / <i>{props.plantNameEN}</i></td>
+                        <td>🌿{props.plantNameKR} / <i>{props.plantNameEN}</i></td>
                     </tr>
                 </table>
             </li>

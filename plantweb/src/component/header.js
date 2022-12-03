@@ -20,9 +20,11 @@ export const Header = () => {
         if(buttonText=="LOGIN"){
             navigate('/login');
         }else{
-            alert("로그아웃 되셨습니다.")
+            alert("로그아웃 되었습니다.")
             setButtonText("LOGIN");
             sessionStorage.clear();
+            navigate('/');
+
         }
     }
     const moveToMyPage =() => {

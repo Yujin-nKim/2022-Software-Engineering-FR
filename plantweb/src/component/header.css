@@ -5,30 +5,46 @@
     height: 100px;
 }
 .logo_div{
-    margin-left: 15%;
-    /* width: 100px; */
+    margin-left: 7%;
+
+    
+    width: 110px;
     text-align: center;
     float: left;
 }
+.logo_div:hover{
+    transform: translateY(-5px);
+}
+
 .logoImg_div{
     height: 100%;
-    
+    width: 120%;
+    margin-left: 15px;
+    display: flex;
 }
 .logoImg_header{
-    display: inline-block;
+
     height: 100%;
     width: 100px;
 }
 
-.logoText{
-    font-size: x-large;
-    color: rgb(9, 78, 9);
-    /* float: left; */
+
+.logoText_div{
+    position: relative;
+    top: -60px;
+    left: 100px;
+    text-align: center;
 
 }
 
+.logoText{
+    font-size: xx-large;
+    color: rgb(9, 78, 9);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 #space_div{
-    width:50%;
+    width:59%;
     height: 100%;
     float: left;
     text-align: center;
@@ -42,19 +58,21 @@
     margin-top: 25px;
 }
 #btn_moveToLogin{
-    background-color: white;
-    border: 1px black solid;
     height: 60px;
     width: 120px;
-    font-size: x-large;
     margin-right: 10px;
+    background-color: white;
+    color: rgb(9, 78, 9);
+    font-size: x-large;
+    border-radius: 15px;
+    text-align: center;
+    border-color: rgb(224, 238, 224);
 }
 #btn_moveToLogin:hover{
-    font-weight: bold;
-    height: 65px;
-    width: 105px;
-    background-color: lightgray;
+    box-shadow: 0 0 20px rgb(224, 238, 224);
+    transform: translateY(-5px);
 }
+
 #myPage_div{
     width: 8%;
     height: 100%;
@@ -70,6 +88,5 @@
     display: inline-block;
 }
 .userIconImg:hover{
-    width: 75px;
-    height: 75px;
+    transform: translateY(-5px);
 }

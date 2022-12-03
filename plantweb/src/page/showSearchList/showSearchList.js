@@ -7,11 +7,7 @@ export const ShowSearchList=(prop)=>{
 
     return (
         <div>
-            <div id="result_div">
-                <p>결과 📃</p>
-                <hr></hr>
-                
-            </div>
+            
             <div className="resultTable_div">
                 <ul className="resultTableUl_div">
                     {resultList}
